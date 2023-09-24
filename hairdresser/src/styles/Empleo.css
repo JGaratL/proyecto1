@@ -1,0 +1,97 @@
+.empleo-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    background-color: #8D2B63; 
+    color: #fff; 
+    position: relative; 
+    z-index: 1;
+    height: 1000px;
+}
+.empleo-container::before {
+    content: "";
+    background-image: url('../images/Scissor.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 200px;
+    transform: rotate(225deg);
+    right: 1000px;
+    width: 50%;
+    height: 50%;
+    opacity: 0.2; 
+    z-index: -1; 
+}
+
+.formulario {
+    width: 40%;
+    text-align: left;
+    padding: 30px 185px 0px 180px; 
+  }
+  
+.formulario h2 {
+    font-size: 32px;
+  }
+  
+  .formulario p {
+    font-size: 16px;
+  }
+  
+  .formulario .file-upload {
+    display: flex;
+    align-items: center;
+  }
+  
+  .formulario .file-label {
+    background-color: #a0a0a0;
+    color: rgb(10, 10, 10);
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 13px;
+
+  }
+  
+  .formulario .file-input {
+    display: none;
+  }
+  
+  .formulario .file-label span {
+    font-size: 16px;
+    color: beige;
+  }
+  
+  .formulario .checkbox-label {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  
+  .enviar-button {
+    background-color: #333; 
+    color: beige; 
+    border-radius: 60px; 
+    padding: 1px 30px;
+    margin-top: 16px;
+    height: 29px;
+    font-size: small;
+    cursor: pointer;
+    
+    
+  }
+  
+  .imagen-empleo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: auto; 
+    background-image: url('../images/pelo.jpg');
+    background-size: cover;
+    background-position: right center;
+  }
+
+  .input-box {
+    margin-bottom: 10px; 
+  }
+    

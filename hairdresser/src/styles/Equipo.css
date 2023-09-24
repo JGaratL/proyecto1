@@ -1,0 +1,74 @@
+  .equipo-container {
+    display: flex;
+    justify-content: space-between; 
+    height: 900px;
+    margin-top: 100px;
+  }
+  
+  .miembro-equipo {
+    width: 30%; 
+    text-align: center;
+    margin: 0px 20px 40px 20px; 
+  }
+  
+  .miembro-equipo img {
+    width: 100%; 
+    border-radius: 50%; 
+  }
+  
+  .info-miembro {
+    margin-top: 10px;
+    background-color: #8D2B63; 
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .puesto {
+    font-weight: bold;
+    color: #1d1d1d; 
+  }
+  
+  .nombre {
+    font-size: 24px;
+    color: #f1f1f1; 
+  }
+  
+  .descripcion {
+    font-size: 14px;
+    color: #1d1d1d; 
+  }
+
+  .seccion-titulo {
+    text-align: center;
+    margin-bottom: 24px;    
+    color: #8D2B63;
+    margin-top: 550px; 
+    text-align: center;
+  }
+  
+  
+  .seccion-titulo h2 {
+    font-size: 24px;
+    color: #8D2B63; 
+    margin-top: 10px;
+  }
+  
+  #photowoman1, #photowoman2, #photowoman3 {
+    width: 50%; 
+  
+  }
+
+.equipotitle {
+
+    padding-top: 110px;
+
+}
+
+.linea2 {
+  width: 13%;
+  margin: 1px auto;
+  border: 1px solid #353535; 
+  opacity: 1; 
+  margin-bottom: 40px;
+}
+  

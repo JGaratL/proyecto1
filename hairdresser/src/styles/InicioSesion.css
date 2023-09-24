@@ -1,0 +1,79 @@
+.inicio-container {
+    display: flex;
+    justify-content: space-between;
+    height: 1000px;
+}
+
+.imagen-inicio {
+    height: 1000px;
+    margin-top: 70px;
+}
+
+.formulario-inicio {
+    width: 60%;
+    text-align: left;
+    padding: 75px 190px 0 130px;
+    background-color: #8D2B63;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.formulario-inicio h1 {
+    font-size: 40px;
+}
+
+.formulario-inicio h3 {
+    font-size: 28px;
+}
+
+.formulario-inicio h4 {
+    font-size: 24px;
+}
+
+.auth-options {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.input-box {
+    margin-bottom: 10px;
+}
+
+.enviar-button {
+    background-color: #333;
+    color: beige;
+    border-radius: 30px;
+ 
+    cursor: pointer;
+}
+
+.forgot-password {
+    text-align: center;
+    margin: 20px 0px 0px 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.container-button {
+
+    display: flex;
+}
+
+.title1 {
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+.title2 {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.auth-option {
+    border-bottom: 1px solid black;  
+    cursor: pointer;
+    padding-bottom: 5px; 
+}
