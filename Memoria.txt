@@ -52,6 +52,7 @@ A continuación del MVP, hubiera sido beneficioso desarrollar:
 Agenda personal para empleados accesible desde dispositivos móviles.
 Integración de una tienda online con carrito de compras.
 Mejoras en la interfaz y experiencia del usuario.
+
 4. Anexos
 4.1. Github - Oh My Cut!
 https://github.com/JGaratL/proyecto1
