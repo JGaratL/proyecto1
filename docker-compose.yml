@@ -1,0 +1,36 @@
+version: '3'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_USER=peluqueria
+      - MYSQL_PASSWORD=/Ballenita69/
+      - MYSQL_DATABASE=peluqueria
+    depends_on:
+      - db
+  
+  frontend:
+    build: ./hairdresser
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+  db:
+    image: mysql:8.0 
+    environment:
+      MYSQL_ROOT_PASSWORD: Canijo69& 
+      MYSQL_DATABASE: peluqueria 
+      MYSQL_USER: peluqueria 
+      MYSQL_PASSWORD: /Ballenita69/ 
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data:
+

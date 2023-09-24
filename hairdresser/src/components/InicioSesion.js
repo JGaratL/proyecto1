@@ -27,6 +27,7 @@ const InicioSesion = ({ setClienteId }) => {
     localStorage.setItem('clienteId', clienteId);
     localStorage.setItem('authToken', authToken);
     setLocalClienteId(clienteId);
+    setClienteId(clienteId);
     
     navigate('/Miscitas');
   };
@@ -51,6 +52,7 @@ const InicioSesion = ({ setClienteId }) => {
           localStorage.setItem('clienteId', response.data.clienteId);
           setLocalClienteId(response.data.clienteId);
           setRegistroExitoso(true);
+          handleLoginSuccess(response.data.clienteId, response.data.token);
         }
       } else {
         response = await axios.post('http://localhost:5000/login', { email, password });

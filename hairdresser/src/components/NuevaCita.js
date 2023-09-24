@@ -240,36 +240,42 @@ function NuevaCita({
             <div className="confirm-button-container">
                 <button onClick={handleConfirmCita} className="confirm-button">Confirmar cita</button>
             </div>
+            {
+            citaDetails &&
             <Modal
-            isOpen={isModalOpen}
-            onRequestClose={() => setIsModalOpen(false)}
-            contentLabel="Detalles de la Cita"
+                isOpen={isModalOpen}
+                onRequestClose={() => setIsModalOpen(false)}
+                contentLabel="Detalles de la Cita"
+                style={{
+                    overlay: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.75)'
+                    },
+                    content: {
+                        top: '50%',
+                        left: '50%',
+                        right: 'auto',
+                        bottom: 'auto',
+                        marginRight: '-50%',
+                        transform: 'translate(-50%, -50%)',
+                        border: 'none',
+                        background: 'none',
+                        overflow: 'auto',
+                        WebkitOverflowScrolling: 'touch',
+                        outline: 'none',
+                        padding: '0'
+                    }
+                }}
             >
-            {citaDetails && (
                 <div className="modal-content">
-                <h3 className="title-with-line">Confirmación de la Cita</h3>
-                <p>
-                    <strong>
-                    {citaDetails.nombre} {citaDetails.apellidos}
-                    </strong>
-                    , tienes una cita el día
-                </p>
-                <p>
-                    <strong>{citaDetails.fecha}</strong>
-                </p>
-                <p>
-                    a las <strong>{citaDetails.hora}</strong> para{' '}
-                    <strong>{citaDetails.servicio}</strong> con{' '}
-                    <strong>{citaDetails.empleado}</strong>
-                </p>
-                <p>¡Nos vemos!</p>
-                <button className="button-close" onClick={handleCloseModal}>
-                    Cerrar
-                </button>
+                    <h3 className="title-with-line">Confirmación de la Cita</h3>
+                    <p><strong>{citaDetails.nombre} {citaDetails.apellidos}</strong>, tienes una cita el día</p>
+                    <p><strong>{citaDetails.fecha}</strong></p>
+                    <p>a las <strong>{citaDetails.hora}</strong> para{' '}<strong>{citaDetails.servicio}</strong> con{' '}<strong>{citaDetails.empleado}</strong></p>
+                    <p>¡Nos vemos!</p>
+                    <button className="button-close" onClick={handleCloseModal}>Cerrar</button>
                 </div>
-            )}
             </Modal>
-
+            }
         </div>
     );
 }

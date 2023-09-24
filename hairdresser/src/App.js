@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom'; 
 import Navbar from './components/Navbar';
 import './App.css';
@@ -26,8 +26,11 @@ function Layout({ children, clienteId, setClienteId }) {
 
 function App() {
     const [clienteId, setClienteId] = useState(localStorage.getItem('clienteId'));
+    useEffect(() => {
+    setClienteId(localStorage.getItem('clienteId'));
 
     console.log("clienteId en App:", clienteId);
+    }, [clienteId]);
 
     return (
         <Router>
