@@ -1,1 +1,57 @@
 
+Proyecto: Oh My Cut!
+© Copyright Universidad Europea. Todos los derechos reservados.
+
+1. Proyecto elegido
+1.1. Peluquería - Oh My Cut!
+1.2. Funcionalidad MVP
+Funcionalidades implementadas y en funcionamiento:
+
+Registro e inicio de sesión de usuarios.
+Reserva de citas en línea.
+Visualización de citas previas y historial de citas para usuarios registrados.
+Opción de pedir cita sin necesidad de registro.
+Selección de fecha, servicio, peluquero y hora al reservar.
+Sección de servicios con listado de precios.
+Sección de presentación del equipo profesional con descripciones.
+Sección de empleo para posibles interesados en unirse al equipo.
+Sección de contacto para consultas y dudas.
+Inicio de sesión con privilegios para empleados para gestionar citas y actualizar su perfil.
+1.3. Uso real – funcionalidad no implementada
+Para un escenario real de uso en una peluquería, el MVP cubre las necesidades básicas. Sin embargo, para una experiencia más completa, sería conveniente añadir:
+
+Una agenda personal para cada empleado, accesible desde dispositivos móviles.
+Sección de cosmética con opción de carrito de compras.
+Mejora en la presentación y modificación de precios de los servicios.
+2. Tecnologías y herramientas
+Tecnologías utilizadas:
+
+Frontend: React.
+Backend: Node.js con Express.
+Base de Datos: MySQL.
+Elección de tecnologías: React proporciona una estructura modular y componentes reutilizables, lo que facilita el desarrollo del frontend. Node.js con Express permite un desarrollo eficiente y escalable para el backend, mientras que MySQL es robusto y confiable para gestionar datos.
+
+Herramientas utilizadas:
+
+Herramienta de diseño (Canva).
+Github para el control de versiones y colaboración.
+Visual Studio Code para el desarrollo.
+Postamn para verificar los endpoints. 
+MySQL server 8.0
+Docker Desktop para el despliegue.
+
+3. Conclusiones
+3.1. Conclusiones personales
+Dificultades encontradas: La inexperiencia en programación web presentó desafíos significativos, especialmente en la autenticación, debido a la integración del registro e inicio de sesión en un único módulo.
+
+Aspectos de mejora: A pesar de los avances realizados, me hubiera gustado incorporar más detalles y funcionalidades, en especial una sección de cosmética con carrito de compras y una presentación más estética de los precios.
+
+3.2. Trabajo futuro
+A continuación del MVP, hubiera sido beneficioso desarrollar:
+
+Agenda personal para empleados accesible desde dispositivos móviles.
+Integración de una tienda online con carrito de compras.
+Mejoras en la interfaz y experiencia del usuario.
+4. Anexos
+4.1. Github - Oh My Cut!
+https://github.com/JGaratL/proyecto1
