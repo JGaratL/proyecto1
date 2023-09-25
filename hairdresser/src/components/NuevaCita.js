@@ -44,6 +44,13 @@ function NuevaCita({
        setIsModalOpen(false);
        navigate('/Miscitas');
     };
+
+    function adjustDateToLocal(date) {
+        const fechaLocal = new Date(date);
+        fechaLocal.setHours(0, 0, 0, 0);
+        return `${fechaLocal.getFullYear()}-${String(fechaLocal.getMonth() + 1).padStart(2, '0')}-${String(fechaLocal.getDate()).padStart(2, '0')}`;
+    }
+    
       
     const handleConfirmCita = async () => {
         if (!clienteId || !peluqueroSeleccionado || !selectedService || !selectedDate || !selectedTime) {
@@ -56,7 +63,7 @@ function NuevaCita({
                 clienteId: clienteId,
                 empleadoNombre: peluqueroSeleccionado,
                 servicioNombre: selectedService,
-                fecha: selectedDate ? selectedDate.toISOString().split('T')[0] : null,
+                fecha: selectedDate ? adjustDateToLocal(selectedDate) : null,
                 horaInicio: selectedTime
             };
     
@@ -75,7 +82,7 @@ function NuevaCita({
                 setCitaDetails({
                     nombre: clienteInfo.nombre,
                     apellidos: clienteInfo.apellido,
-                    fecha: selectedDate ? selectedDate.toISOString().split('T')[0] : null,
+                    fecha: selectedDate ? adjustDateToLocal(selectedDate) : null,
                     hora: selectedTime,
                     servicio: selectedService,
                     empleado: peluqueroSeleccionado
