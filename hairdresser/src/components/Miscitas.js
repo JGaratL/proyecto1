@@ -129,12 +129,13 @@ const Miscitas = ({ clienteId }) => {
           {error ? (
             <div className="error-message">{error}</div>
           ) : (
-            <>
+            <>            
               <div className="header-section">
                 <h2><FaPhone color="purple" size={24} /> Mis citas</h2>
                 <hr />
               </div>
 
+              {citasFuturas.length == 0 && <p className="error-message text-center p-4">No hay citas disponibles</p>}
               {citasFuturas.map(cita => (
                 <div className="appointment-row" key={cita.fecha + cita.hora}>
                   <div className="column"><FaUser color="purple" size={16} /></div>
@@ -157,6 +158,7 @@ const Miscitas = ({ clienteId }) => {
                 <hr />
               </div>
 
+              {citasPasadas.length == 0 && <p className="error-message text-center p-4">No hay citas pasadas disponibles</p>}
               {citasPasadas.map(cita => (
                 <div className="history-row" key={cita.fecha}>
                   <div><FaUser color="purple" size={16} /><span className='nameClient'>{clienteData.nombre} {clienteData.apellido}</span></div>

@@ -65,16 +65,14 @@ const InicioSesion = ({ setClienteId }) => {
       }
     } catch (error) {
       setErrorMessage(
-        error.response && error.response.data.message
-          ? error.response.data.message
-          : 'Error al procesar la solicitud.'
+        error.response.data
       );
     }
   };
 
   return (
     <div className="general-container">
-      {errorMessage && <p className="error-message">{errorMessage}</p>}
+      
 
       <div className="inicio-container">
         <div className="imagen-inicio">
@@ -161,6 +159,8 @@ const InicioSesion = ({ setClienteId }) => {
                 autoComplete="current-password"
               />
             </Form.Group>
+
+            {errorMessage && <p className="error-message">{errorMessage}</p>}
 
             <div className='container-button'>
             <Button variant="dark" className="enviar-button" type="submit" onClick={(e) => { 
