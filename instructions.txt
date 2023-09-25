@@ -1,0 +1,25 @@
+Instrucciones para Configurar el Entorno de Desarrollo
+
+Preparativos Iniciales:
+1. Asegurarte de no tener nada en ejecución en las direcciones: 
+   - localhost:5000
+   - localhost:3000
+
+Configuración de MySQL:
+2. Abrir el Administrador de Tareas en Windows.
+3. Iniciar MySQL 8.0.
+4. Acceder al Command Line Client MySQL 8.0.
+5. Introducir la contraseña: Canijo69&
+6. Ejecutar el comando: USE peluqueria;
+
+Configuración del Backend:
+7. Abrir la CMD de Windows como administrador.
+8. Navegar hasta la carpeta backend con el comando:
+   cd [ruta-de-tu-carpeta]\oh-my-cut-website\backend
+9. Ejecutar: node server.js
+
+Configuración del Frontend:
+10. Abrir el proyecto oh-my-cut-website en Visual Studio Code.
+11. Navegar hasta la carpeta hairdresser con el comando:
+    cd [ruta-de-tu-carpeta]\oh-my-cut-website\hairdresser
+12. Ejecutar: npm start
